@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Thorne - Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #f4f4f4;
+            --accent-color: #ff4747;
+            --card-bg: #1e1e1e;
+            --link-hover: #d43737;
+            --header-bg: #ff0a0a;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1e1e1e;
+                --text-color: #ddd;
+                --card-bg: #2c2c2c;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .container {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: var(--accent-color);
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: var(--text-color);
+            background: var(--accent-color);
+            padding: 12px 18px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .links a:hover {
+            background: var(--link-hover);
+        }
+
+        .links a i {
+            font-size: 18px;
+        }
+
+        /* Ajuste para garantir que os jogos fiquem lado a lado */
+        #game-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .game-card {
+            width: calc(33.333% - 20px); /* 3 colunas, com espaçamento */
+            background: #2c2c2c;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .game-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .game-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card h3 {
+            font-size: 18px;
+            color: var(--accent-color);
+            margin-top: 10px;
+        }
+
+        .game-card p {
+            font-size: 14px;
+            color: var(--text-color);
+            margin-top: 10px;
+        }
+
+        .game-card a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .game-card a:hover {
+            color: var(--link-hover);
+        }
+
+        /* Responsividade: ajustar para 2 colunas em telas menores */
+        @media (max-width: 768px) {
+            .game-card {
+                width: calc(50% - 20px); /* 2 colunas em telas menores */
+            }
+        }
+
+        /* Responsividade: ajustar para 1 coluna em telas muito pequenas */
+        @media (max-width: 480px) {
+            .game-card {
+                width: 100%; /* 1 coluna em telas muito pequenas */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://github.com/lucas15560.png" alt="Foto de Lukas Thorne" class="profile-img">
+        <h1>Lukas Thorne</h1>
+        <p>🎮 Desenvolvedor de Jogos | 🎨 Designer Gráfico | 🖋 Criador de Histórias</p>
+        
+        <!-- Sobre mim -->
+        <section class="section">
+            <h2>Sobre mim</h2>
+            <p>Sou um desenvolvedor apaixonado por criar jogos e experiências interativas. Tenho habilidades em programação, design e criação de histórias, sempre buscando combinar arte e tecnologia para criar projetos inovadores.</p>
+        </section>
+
+        <!-- Experiência -->
+        <section class="section">
+            <h2>Experiência</h2>
+            <ul>
+                <li><strong>Desenvolvedor de Jogos - Empresa XYZ</strong> (2022 - 2025) - Desenvolvimento de jogos independentes e mods de jogos existentes.</li>
+                <li><strong>Designer Gráfico Freelancer</strong> (2020 - 2022) - Criação de designs para empresas de jogos e conteúdo digital.</li>
+            </ul>
+        </section>
+
+        <!-- Educação -->
+        <section class="section">
+            <h2>Educação</h2>
+            <ul>
+                <li><strong>Graduação em Design de Jogos</strong> - Universidade XYZ (2021-2024)</li>
+                <li><strong>Técnico em Programação</strong> - Etec ABC (2019-2021)</li>
+            </ul>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="section">
+            <h2>Habilidades</h2>
+            <ul>
+                <li><strong>Programação:</strong> C#, JavaScript, Python, Unity3D, HTML/CSS</li>
+                <li><strong>Design Gráfico:</strong> Photoshop,</li>
+                <li><strong>Game Design:</strong> Level design, mecânicas de jogos, narrativa interativa</li>
+                <li><strong>Ferramentas:</strong> Git, Unity, Aseprite</li>
+            </ul>
+        </section>
+
+        <!-- Idiomas -->
+        <section class="section">
+            <h2>Idiomas</h2>
+            <ul>
+                <li><strong>Português:</strong> Nativo</li>
+                <li><strong>Inglês:</strong> Avançado</li>
+            </ul>
+        </section>
+
+        <!-- Certificados e Cursos Relevantes -->
+        <section class="section">
+            <h2>Certificados e Cursos Relevantes</h2>
+            <ul>
+                <li><strong>Certificado em Unity Game Development</strong> - Udemy (2023)</li>
+                <li><strong>Certificado em Design de Jogos</strong> - Coursera (2022)</li>
+            </ul>
+        </section>
+
+        <!-- Projetos -->
+        <section class="section">
+            <h2>Projetos</h2>
+            <div id="game-gallery">
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x200?text=Ratsaw" alt="Ratsaw">
+                    <h3>Ratsaw Carnage</h3>
+                    <p>Jogo metroidvania hack and slash sobre um rato em um mundo pós-apocalíptico.</p>
+                    <a href="https://lukasthorne.itch.io/RatSawCarnage" target="_blank">Ver Jogo</a>
+                </div>
+                <div class="game-card">
+                    <img src="https://img.itch.zone/aW1nLzEzOTkwMzc0LnBuZw==/original/HyFcMI.png" alt="Streatchcat">
+                    <h3>ScretchCat</h3>
+                    <p>Um jogo de plataforma onde você controla o StretchCat, um felino que pode esticar suas patas e enfrentar desafios criativos.</p>
+                    <a href="https://lukasthorne.itch.io/stretchcat" target="_blank">Ver Jogo</a>
+                </div>
+                <div class="game-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR280pyLP4mwt_iBzWjoIGLHd6kBtP-M0KlOA&s" alt="Cliche">
+                    <h3>Cliche Arcade</h3>
+                    <p>Um jogo de arcade cheio de ação e desafios! Enfrente ondas de inimigos em um estilo retrô e mostre suas habilidades.</p>
+                    <a href="https://lukasthorne.itch.io/cliche-arcade" target="_blank">Ver Jogo</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Links -->
+        <div class="links">
+            <a href="https://github.com/lucas15560" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://twitter.com/LucasMiguel1556" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://linkedin.com/in/lukasthorne" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+
+</body>
+</html>
